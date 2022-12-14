@@ -1,0 +1,19 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a nubner");
+        String radix = sc.nextLine();
+        if(radix.matches("[01]+")){
+            System.out.println("binary radix=2");
+        }
+        else if(radix.matches("[1-8]+")){
+            System.out.println("octal radix=8");
+        }
+        else if(radix.matches("[A-F1-9]+")){
+            System.out.println("hexadecimal radix=16");
+        }
+        else
+            System.out.println("decimal radix=10");
+    }
+}
