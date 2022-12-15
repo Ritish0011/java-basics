@@ -1,0 +1,25 @@
+class Main{
+    public static void main(String[] args){
+        int a[]=new int[10];
+        a[0]=5;
+        a[1]=9;
+        a[2]=6;
+        a[3]=10;
+        a[4]=12;
+        a[5]=7;
+        for(int x:a){
+            System.out.print(x+",");
+        }
+        System.out.println("");
+        int num = 15;
+        int n=6;
+        int index = 2;
+        for(int i=n-1;i>=index;i--){
+        a[i+1]=a[i];
+    }
+    a[index]=num;
+    for(int p:a){
+        System.out.print(p+",");
+    }
+    
+}
